@@ -1,0 +1,40 @@
+public class Driverschocolate {
+public static void main(String args[]) {
+
+	Candy candy=new Candy();
+	candy.setInfo("sai", "teja", "Snickers");
+	candy.getInfo();
+	
+	System.out.println();
+	
+	Sweet sweet=new Sweet();
+	sweet.setInfo("sai", "teja", "GulabJamun");
+	sweet.getInfo();
+	System.out.println();
+	
+//Gift -> Candy -> Chocolate
+	Chocolate chocola =new Chocolate();
+	//choco.setInfo(giftedBy, giftedTo, candyType);
+	chocola.setInfo("Dairy Milk", "Chocolate Bar", 120, 576, 50);
+	chocola.setCandyType("Chocolate");
+	chocola.getInfo();
+	
+	System.out.println();
+//Gift -> Candy -> Snic
+	Snic snic=new Snic();
+	//Snickers.setInfo(giftedBy, giftedTo);
+	snic.setCandyType("Snickers");
+	snic.setInfo("Canva", "Soft Snickers", 505, 780, 25);
+	snic.getInfo();
+
+	System.out.println();
+	Jalebi jalebi=new Jalebi();
+	jalebi.setSweetType("Dessert");
+	jalebi.setInfo("Raam", "Sugar Jalebi", 1000, 1500, 750);
+	jalebi.getInfo();
+	
+
+	
+	
+}
+}
