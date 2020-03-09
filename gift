@@ -1,0 +1,4 @@
+interface gift {
+public void setInfo();
+public void getInfo();
+}
